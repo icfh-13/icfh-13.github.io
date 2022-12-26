@@ -30,62 +30,236 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-user"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/read/"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">阅读</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Icfh</div><div class="header-banner-info__subtitle">目前是一个人菜瘾大的Web安全狗</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/25/python%E6%A1%86%E6%9E%B6/">python框架学习</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt"></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/22/SSTI/">SSTI</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-24</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h1 id="SSTI���"   >
-          <a href="#SSTI���" class="heading-link"><i class="fas fa-link"></i></a><a href="#SSTI���" class="headerlink" title="SSTI���"></a>SSTI���</h1>
-      <p>SSTI(Server-Side Templates Injection)Ϊ�����ģ��ע��ļ�ơ�</p>
-<p>��������������һ��ͦ�����ͼ��������˵���ǿ��Խ�����������ģ����ִ��</p>
-<p><img src="https://image.3001.net/images/20220428/1651151570_626a92d28a842cc670599.png"></p>
-<p>��CTF�г����������µļ��ֿ�ܣ�</p>
-<p>python:</p>
-<p>Django��Flask��Tornado</p>
-<blockquote>
-<p><em>��ܵ�ѧϰ���ӣ�</em></p>
-<p>1.<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://shouce.jb51.net/tornado/index.html" >Tornado���Ž̳�</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-</blockquote>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-user"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/read/"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">阅读</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Icfh</div><div class="header-banner-info__subtitle">目前是一个人菜瘾大的Web安全狗</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/26/JavaScript-Note/">JavaScript_Note</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-26</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="写在前面"   >
+          <a href="#写在前面" class="heading-link"><i class="fas fa-link"></i></a><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1>
+      <p>《JavaScript》高级程序设计阅读笔记…也是学习JS的第一本编程书籍。</p>
+<p> 测试环境：Node.js v16.18.0.</p>
 
-        <h1 id="��L��"   >
-          <a href="#��L��" class="heading-link"><i class="fas fa-link"></i></a><a href="#��L��" class="headerlink" title="��Ŀ��"></a>��Ŀ��</h1>
+        <h1 id="阅读："   >
+          <a href="#阅读：" class="heading-link"><i class="fas fa-link"></i></a><a href="#阅读：" class="headerlink" title="阅读："></a>阅读：</h1>
       
-        <h2 id="pythonƪ"   >
-          <a href="#pythonƪ" class="heading-link"><i class="fas fa-link"></i></a><a href="#pythonƪ" class="headerlink" title="pythonƪ"></a>pythonƪ</h2>
-      
-        <h3 id="Tornado"   >
-          <a href="#Tornado" class="heading-link"><i class="fas fa-link"></i></a><a href="#Tornado" class="headerlink" title="Tornado:"></a>Tornado:</h3>
-      <blockquote>
-<p>��Ŀ:[������ 2018]easy_tornado</p>
-</blockquote>
-<p>��Ŀ����һ��Ŀ¼������</p>
-<p><img src="https://img-blog.csdnimg.cn/fbea74fbceb24699ac42f598080d784e.png"></p>
-<p>����Ŀ¼��</p>
+        <h2 id="第二章"   >
+          <a href="#第二章" class="heading-link"><i class="fas fa-link"></i></a><a href="#第二章" class="headerlink" title="第二章:"></a>第二章:</h2>
+      <ol>
+<li>script标签中使用src属性包含外部的js文件时,html页面中嵌入的js代码不执行</li>
+</ol>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;out.js&quot;</span>&gt;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">func_xss</span>(<span class="params"></span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="title function_">alert</span>(<span class="string">&quot;xss&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">func_xss</span>();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></div></figure>
+<p>外部的out.js代码将被解析执行，而嵌入的js代码不执行</p>
+<ol start="2">
+<li>src属性可以指向远程服务器上的js文件</li>
+</ol>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://www.somewhere.com/afile.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></div></figure>
+
+<ol start="3">
+<li>script标签的存放位置</li>
+</ol>
+<p>如果在&lt;head&gt;中有js和css文件，则对这些文件进行加载、渲染或执行。</p>
+<p>那么html&lt;body&gt;内容会以人体延迟感官出现</p>
+<p>故最好将&lt;script&gt;标签置于&lt;body&gt;中</p>
+<ol start="4">
+<li>延时js脚本</li>
+</ol>
+<p>在&lt;script&gt;标签中加入defer属性，表示是否要延时执行，但是只对外部脚本有效。</p>
+<p>涉及到前后端交互的内容，js脚本在交互操作之前执行。</p>
+<figure class="highlight html"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>MyTest<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">action</span>=<span class="string">&quot;hello_world.php&quot;</span>&gt;</span></span><br><span class="line">        name:<span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span>&gt;</span></span><br><span class="line">        password:<span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line">        submit<span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    This is a test!</span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;hello_world.js&quot;</span> <span class="attr">defer</span>=<span class="string">&quot;defer&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></div></figure>
+
+<p>如上，js代码在表单提交之前执行。</p>
+<ol start="5">
+<li>async的异步js脚本操作</li>
+</ol>
+<p>设定async属性目的让js挂起下载，同时加载页面资源（并发）</p>
+<p>但是无法保证js文件按顺序执行(example1.js和example2.js谁先执行不一定)</p>
+<figure class="highlight html"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Example HTML Page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;example1.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;example2.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></div></figure>
+
+<ol start="6">
+<li>不支持js脚本或者禁用js脚本时的提示信息</li>
+</ol>
+<figure class="highlight html"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>MyTest<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">action</span>=<span class="string">&quot;hello_fuck.php&quot;</span>&gt;</span></span><br><span class="line">        name:<span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span>&gt;</span></span><br><span class="line">        password:<span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span>&gt;</span></span><br><span class="line">        submit<span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    This is a test!</span><br><span class="line">    <span class="tag">&lt;<span class="name">noscript</span>&gt;</span>js被禁用时触发<span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;hello_fuck.js&quot;</span> <span class="attr">defer</span>=<span class="string">&quot;defer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+
+
+        <h2 id="第三章："   >
+          <a href="#第三章：" class="heading-link"><i class="fas fa-link"></i></a><a href="#第三章：" class="headerlink" title="第三章："></a>第三章：</h2>
+      <ol>
+<li>js的数据类型：</li>
+</ol>
 <blockquote>
-<p>flag.txt ����ṩ�˹���flag���ڵ�Ŀ¼��Ϣ</p>
+<p>Undefined、Null、Number、String、Boolean、Object</p>
+</blockquote>
+<p>类型转换问题</p>
+<ol start="2">
+<li>浮点精度问题</li>
+</ol>
+<p>这个问题在很多语言都有，最好的解决方法是不要单一使用具体的浮点数。</p>
+<p>原理问题参考CSAPP吧。</p>
+<ol start="3">
+<li>函数使用：</li>
+</ol>
+<blockquote>
+<p>isNaN()</p>
+</blockquote>
+<p><code>isNaN(data);  // 查看data是否可以转化成Number</code></p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(<span class="title class_">NaN</span>));        <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(<span class="string">&quot;blue&quot;</span>));     <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(<span class="string">&quot;123a&quot;</span>));     <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">isNaN</span>(<span class="literal">true</span>));       <span class="comment">// false</span></span><br></pre></td></tr></table></div></figure>
+
+<blockquote>
+<p>Number()、parseInt()、parseFloat()</p>
+</blockquote>
+<p><code>Number()函数比较少用</code></p>
+<p><code>parseInt(data, radix); //解析方式跟php的差不多了</code>       </p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">parseInt</span>(<span class="string">&quot;AF&quot;</span>,<span class="number">16</span>));         <span class="comment">// 表示十六进制解析</span></span><br></pre></td></tr></table></div></figure>
+
+<p><code>parseFloat(data); //解析方式跟php差不多，但只支持十进制</code></p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="built_in">parseFloat</span>(<span class="string">&quot;AF&quot;</span>));          <span class="comment">// NaN</span></span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<blockquote>
+<p>toString()</p>
+</blockquote>
+<p><code>toString(radix)转化为字符串</code> </p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> age = <span class="number">10</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age.<span class="title function_">toString</span>());            <span class="comment">// &quot;10&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age.<span class="title function_">toString</span>(<span class="number">2</span>));           <span class="comment">// &quot;1010&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age.<span class="title function_">toString</span>(<span class="number">8</span>));           <span class="comment">// &quot;12&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age.<span class="title function_">toString</span>(<span class="number">16</span>));          <span class="comment">// &quot;a&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<ol start="4">
+<li>操作符</li>
+</ol>
+<blockquote>
+<p>移位运算符</p>
+</blockquote>
+<p>左移  <code>&lt;&lt;</code><br>无符号右移  <code>&gt;&gt;&gt;</code><br>有符号右移  <code>&gt;&gt;</code></p>
+<blockquote>
+<p>乘性运算符</p>
+</blockquote>
+<p><code>*</code>:</p>
+<p><code>Infinity * 0 = NaN;</code></p>
+<p><code>/</code>:</p>
+<p><code>Infinity / Infinity = NaN;</code></p>
+<p><code>%</code>:</p>
+<p><code>123 % 0 = NaN;</code></p>
+<p><code>Infinity % 123 = NaN;</code></p>
+<p><code>Infinity % Infinity = NaN;</code></p>
+<blockquote>
+<p>加性运算符</p>
+</blockquote>
+<p>P49</p>
+<blockquote>
+<p>比较运算符</p>
+</blockquote>
+<p>NaN和任何数比较，表达式结果为false</p>
+<p><code>NaN!=NaN  // true</code></p>
+<ol start="5">
+<li>语句</li>
+</ol>
+<blockquote>
+<p>label标签</p>
 </blockquote>
 <blockquote>
-<p>welcome.txt �е�render()������ʾ�������Ŀ���֣���Tornado����µ���Ⱦ����</p>
+<p>for in:   遍历对象属性</p>
+</blockquote>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> obj)&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<ol start="6">
+<li>函数</li>
+</ol>
+<blockquote>
+<p>声明：使用function关键字</p>
 </blockquote>
 <blockquote>
-<p>hints.txt �ṩ���ļ���ϣ�Ĺ��췽��</p>
+<p>函数参数：</p>
 </blockquote>
-<p>������Ѱ��ģ��ע���ע���</p>
-<p>�����޸�filehash�����һ���������棺</p>
-<p><img src="https://img-blog.csdnimg.cn/142f7a4b18a3406d9324b92019eac985.png"></p>
-<p>�޸�msg�۲����:</p>
-<p><img src="https://img-blog.csdnimg.cn/1e7adbed084f40e5a46da9c0e2685c39.png"></p>
-<p>������һ���Ĺ��ˣ�<br><img src="https://img-blog.csdnimg.cn/f617f94e59ea450b837107e3cc0c5503.png"></p>
+<p>内部实现原理：</p>
+<p>依靠于arguments对象的（类似于数组访问传入的函数参数）</p>
+<p>所以从某些角度上来说，传入几个参数其实都没事，取决于函数体的实现是怎么实现的。</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// demo1</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">print_num</span>(<span class="params">num1</span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">arguments</span>[<span class="number">0</span>]);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">arguments</span>.<span class="property">length</span>);      <span class="comment">// 传入的参数个数</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">arguments</span>.<span class="property">callee</span>);      <span class="comment">// 调用的函数名</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">print_num</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>);                   <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// demo2</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">print_num</span>(<span class="params">num1</span>)&#123;</span><br><span class="line">    <span class="variable language_">arguments</span>[<span class="number">0</span>] = <span class="number">10</span>;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">arguments</span>[<span class="number">0</span>]);          <span class="comment">// 修改了</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(num1);                  <span class="comment">// 不变</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">arguments</span>.<span class="property">length</span>);      <span class="comment">// 传入的参数个数</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">arguments</span>.<span class="property">callee</span>);      <span class="comment">// 调用的函数名</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">print_num</span>(<span class="number">1</span>);                   </span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
 <blockquote>
-<p>���ǵ�Ŀ���ǻ�ȡ��ǰҳ����Դ��cookie_secret</p>
+<p>ECMAScript标准中js函数无重载</p>
 </blockquote>
-<p>���ƣ�ʹ�ñ���handler���з���settings����</p>
+<p>不同于C、C++中有函数签名，js的函数参数是基于其arguments对象机制的（参数可以任意传入，只取决你用不用而已）</p>
+<p>因此你无法通过实际函数调用的函数特征标来确定重载函数，此产生了二义性。故无重载函数。</p>
+
+        <h2 id="第四章"   >
+          <a href="#第四章" class="heading-link"><i class="fas fa-link"></i></a><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2>
+      <p>1.内存管理机制：</p>
 <blockquote>
-<p>handler —&gt; ��ǰҳ���RequestHandler����</p>
-<p>RequestHandler.settings —&gt; self.application.settings</p>
+<p>基于值和基于引用的管理</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/d95e00bde5f94159bf082210b321a8c1.png"></p>
-<p>����ֻҪ��ģ��ע�봦����<code>&#123;&#123;handler.settings&#125;&#125;</code>(Jinja2�﷨)���cookie_secret</p>
-<p>�ο����ӣ�</p>
-<p>1.<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/bmjoker/p/13508538.html" >https://www.cnblogs.com/bmjoker/p/13508538.html</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/20/CTF%E6%9D%82%E8%AE%B0/">CTF杂记</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-22</span></span></div></header><div class="post-body"><div class="post-excerpt">
+<p><img src="https://img-blog.csdnimg.cn/84d9a9faa30e443eacb6d9357c5a2cf7.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/4054db89dd854f86b69044366381f6e4.png"></p>
+<blockquote>
+<p>作用域链</p>
+</blockquote>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> color = <span class="string">&quot;blue&quot;</span>; </span><br><span class="line"><span class="keyword">function</span> <span class="title function_">changeColor</span>(<span class="params"></span>)&#123; </span><br><span class="line">    <span class="keyword">var</span> anotherColor = <span class="string">&quot;red&quot;</span>; </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">swapColors</span>(<span class="params"></span>)&#123; </span><br><span class="line">    <span class="keyword">var</span> tempColor = anotherColor; </span><br><span class="line">    anotherColor = color; </span><br><span class="line">    color = tempColor; </span><br><span class="line">    <span class="comment">// 这里可以访问 color、anotherColor 和 tempColor </span></span><br><span class="line"> &#125; </span><br><span class="line"> <span class="comment">// 这里可以访问 color 和 anotherColor，但不能访问 tempColor </span></span><br><span class="line"> <span class="title function_">swapColors</span>(); </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里只能访问 color </span></span><br><span class="line"><span class="title function_">changeColor</span>();</span><br></pre></td></tr></table></div></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/f66dd88acf8c482e96baecd536da5338.png"></p>
+<p>window在作用域链的后端，tempColor在作用域链的后端</p>
+<ol start="2">
+<li>JavaScript没有块级作用域</li>
+</ol>
+<p>if、for语句中声明的变量，会拓展到当前的执行环境。</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">func</span>(<span class="params"></span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(i);     <span class="comment">// 10</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(i);         <span class="comment">// undefined</span></span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/8bbfe6bd63ba45619441902493f2a9ce.png"></p>
+<ol start="3">
+<li>垃圾收集机制</li>
+</ol>
+<blockquote>
+<p>标记清除</p>
+</blockquote>
+<p>实现方式：</p>
+<p>可以设定标志位看是否进入执行环境；</p>
+<p>也可以设定一个表记录进入执行环境和还没有进入执行环境的变量</p>
+<p>清除策略：</p>
+<p>观察变量是否在当前的执行环境中。</p>
+<p>比如当前执行环境为在func下，那么console.log、for、i均在该执行环境中</p>
+<p>那比如当运行环境到了Window下，i已经不在该执行环境中因而被销毁</p>
+<p><img src="https://img-blog.csdnimg.cn/8bbfe6bd63ba45619441902493f2a9ce.png"></p>
+<blockquote>
+<p>引用计数</p>
+</blockquote>
+<p>对于该份内存值的引用进行计数</p>
+<p>漏洞：循环引用（相互引用）</p>
+<p>疑问：P79</p>
+<blockquote>
+<p>垃圾回收下的性能问题调优</p>
+</blockquote>
+<p>接触引用</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">createPerson</span>(<span class="params">name</span>)&#123; </span><br><span class="line"> <span class="keyword">var</span> localPerson = <span class="keyword">new</span> <span class="title class_">Object</span>(); </span><br><span class="line"> localPerson.<span class="property">name</span> = name; </span><br><span class="line"> <span class="keyword">return</span> localPerson; </span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">var</span> globalPerson = <span class="title function_">createPerson</span>(<span class="string">&quot;Nicholas&quot;</span>); </span><br><span class="line"><span class="comment">// 手工解除 globalPerson 的引用</span></span><br><span class="line">globalPerson = <span class="literal">null</span>;</span><br></pre></td></tr></table></div></figure>
+<p>在createPerson函数执行后，localPerson和name变量被销毁，但其销毁前的内存未被释放。此处我们设定返回值为null，就是为了手工解除引用，使得下一轮的垃圾收集能够释放该内存。</p>
+
+        <h2 id="第五章"   >
+          <a href="#第五章" class="heading-link"><i class="fas fa-link"></i></a><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2>
+      <p>本章主要讲了几种引用类型(Object,Array)</p>
+<ol>
+<li>Object</li>
+</ol>
+<p>用起来像字典一样</p>
+<blockquote>
+<p>创建</p>
+</blockquote>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// new</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Object</span>();</span><br><span class="line">obj[<span class="string">&#x27;name&#x27;</span>] = <span class="string">&#x27;icfh&#x27;</span>;</span><br><span class="line">obj[<span class="string">&#x27;age&#x27;</span>] = <span class="number">20</span>;</span><br><span class="line"><span class="comment">// 直接法</span></span><br><span class="line"><span class="keyword">var</span> obj_ = &#123;<span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;icfh&#x27;</span>, <span class="string">&#x27;age&#x27;</span>: <span class="number">20</span>&#125;;</span><br><span class="line"><span class="comment">// 输出一样</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj_);</span><br></pre></td></tr></table></div></figure>
+
+<blockquote>
+<p>访问</p>
+</blockquote>
+<p>索引法、点表示法</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建</span></span><br><span class="line"><span class="keyword">var</span> obj = &#123;<span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;icfh&#x27;</span>, <span class="string">&#x27;age&#x27;</span>: <span class="number">20</span>&#125;</span><br><span class="line"><span class="comment">// 访问</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj[<span class="string">&#x27;name&#x27;</span>]);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">name</span>);</span><br></pre></td></tr></table></div></figure>
+
+<ol start="2">
+<li>Array</li>
+</ol>
+<blockquote>
+<p>创建</p>
+</blockquote>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// new</span></span><br><span class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="title class_">Array</span>(<span class="number">10</span>);</span><br><span class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="title class_">Array</span>(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;age&quot;</span>);</span><br><span class="line"><span class="comment">// 直接法</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;age&#x27;</span>];</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<blockquote>
+<p>访问</p>
+</blockquote>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;age&#x27;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr[<span class="number">0</span>]);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr[<span class="number">1</span>]);</span><br></pre></td></tr></table></div></figure>
+
+<blockquote>
+<p>一些方法</p>
+</blockquote>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;age&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 数组长度</span></span><br><span class="line">arr.<span class="property">length</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 检测数组</span></span><br><span class="line"><span class="title function_">isArray</span>(arr);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 转换方法</span></span><br><span class="line"><span class="comment">// toString()、toLocaleString()、valueOf()</span></span><br><span class="line"><span class="comment">// demo:</span></span><br><span class="line"><span class="keyword">var</span> person1 = &#123;</span><br><span class="line">    <span class="attr">toLocaleString</span>: <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Nikolaos&quot;</span>;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    toString : <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Nicholas&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> person2 = &#123;</span><br><span class="line">    <span class="attr">toLocaleString</span>: <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Grigorios&quot;</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">toString</span>: <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Greg&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> people = [person1, person2];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(people);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(people.<span class="title function_">toString</span>());             <span class="comment">// people继承了toString..</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(people.<span class="title function_">toLocaleString</span>());</span><br><span class="line"><span class="comment">// join()</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 数据结构上的模拟</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// stack: push、pop</span></span><br><span class="line"><span class="keyword">var</span> colors = [<span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;purple&#x27;</span>];</span><br><span class="line">colors.<span class="title function_">push</span>(<span class="string">&#x27;yellow&#x27;</span>);      <span class="comment">// [&#x27;green&#x27;, &#x27;red&#x27;, &#x27;purple&#x27;, &#x27;yellow&#x27;]</span></span><br><span class="line">colors.<span class="title function_">pop</span>();               <span class="comment">// [&#x27;green&#x27;, &#x27;red&#x27;, &#x27;purple&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// queue: push(入队)、shift(出队)</span></span><br><span class="line"><span class="comment">// 反方向的队列: pop(右边出队)、 unshift(左边入队)</span></span><br><span class="line"><span class="keyword">var</span> colors = [<span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;purple&#x27;</span>];</span><br><span class="line">colors.<span class="title function_">shift</span>();             <span class="comment">// [&#x27;red&#x27;, &#x27;purple&#x27;]</span></span><br><span class="line">colors.<span class="title function_">push</span>(<span class="string">&#x27;green&#x27;</span>);       <span class="comment">// [&#x27;red&#x27;, &#x27;purple&#x27;, &#x27;green&#x27;]       </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 重排序方法</span></span><br><span class="line"><span class="comment">// 逆序   reverse()</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></div></figure></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/25/python%E6%A1%86%E6%9E%B6/">python框架学习</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt"></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/20/CTF%E6%9D%82%E8%AE%B0/">CTF杂记</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-22</span></span></div></header><div class="post-body"><div class="post-excerpt">
         <h1 id="写在前面"   >
           <a href="#写在前面" class="heading-link"><i class="fas fa-link"></i></a><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1>
       <p>学习安全本就是苦行僧修炼的过程。</p>
